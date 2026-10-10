@@ -28,7 +28,7 @@ const NavBar = () => {
   }, [isOpen]);
 
   const linkClass =
-    "relative font-poppins text-[18px] font-bold uppercase tracking-[0.1em] transition-all duration-300 hover:text-[#1f3d1f] after:absolute after:-bottom-1.5 after:left-0 after:h-[1px] after:w-0 after:bg-[#1f3d1f] after:transition-all after:duration-300 after:ease-out hover:after:w-full";
+    "relative font-poppins text-[18px] font-semibold uppercase tracking-[0.1em] transition-all duration-300 hover:text-[#1f3d1f] after:absolute after:-bottom-1.5 after:left-0 after:h-[1px] after:w-0 after:bg-[#1f3d1f] after:transition-all after:duration-300 after:ease-out hover:after:w-full";
 
   const getNavHref = (item : string) => {
     switch (item) {
@@ -62,7 +62,7 @@ const NavBar = () => {
         <nav className="flex w-full items-center justify-between">
   {/* Logo */}
   <a
-    href="#home"
+    href="/"
     onClick={() => setIsOpen(false)}
     className="-ml-3 flex shrink-0 items-center justify-center"
     aria-label="Go to home"

@@ -12,7 +12,7 @@ import LocationSection from "./Location";
 const HomePage = () => {
   return (
     <>
-    <NavBar />
+    {/* <NavBar /> */}
     <HeroSection />
     <AboutUs />
     <PremiumBentoGrid />

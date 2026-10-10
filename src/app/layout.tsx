@@ -1,19 +1,12 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
-import { myFont } from "@/font";
+import { Poppins } from "next/font/google";
+import NavBar from "@/components/NavBar"; // Adjust the import path if needed
 
 const poppins = Poppins({
-  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
-
-
-export const metadata: Metadata = {
-  title: "Wise&Wright",
-  description: "Wise&Wright",
-};
 
 export default function RootLayout({
   children,
@@ -21,8 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${myFont.variable} h-full`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="en"
+      className={`${poppins.variable} h-full`}
+    >
+      <body className="flex min-h-full flex-col">
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

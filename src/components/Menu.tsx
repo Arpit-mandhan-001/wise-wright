@@ -13,12 +13,12 @@ const content = {
   note: "Made to order, made your way. Ask us about swaps and allergens. Menu and prices may vary by café.",
   tabs: ["Our favorites", "Bowls", "Salads", "Toast", "Smoothies", "Espresso", "Matcha & brews"],
   items: [
-    { name: "Everyday nourish bowl", desc: "Quinoa, roasted sweet potato, avocado, greens & lemon tahini.", price: 14.5, badge: "Plant-based", category: "Bowls", favorite: true, src: "/images/dish1.webp" },
-    { name: "Green goddess salad", desc: "Crunchy greens, cucumber, edamame & our herby green dressing.", price: 13, badge: "Fresh favorite", category: "Salads", favorite: true, src: "/images/shakes.webp" },
-    { name: "The avocado toast", desc: "Sourdough, smashed avocado, cherry tomatoes & chili crunch.", price: 10.5, badge: "All-day classic", category: "Toast", favorite: true, src: "/images/shakes2.webp" },
-    { name: "Berry bright smoothie", desc: "Strawberry, blueberry, banana & creamy oat milk. Pure sunshine.", price: 8, badge: "Dairy-free", category: "Smoothies", favorite: true, src: "/images/dish4.webp" },
-    { name: "Oat milk flat white", desc: "Double ristretto, silky steamed oat milk & a smooth finish.", price: 5.5, badge: "Barista pick", category: "Espresso", favorite: false, src: "/images/dish3.webp" },
-    { name: "Ceremonial iced matcha", desc: "Stone-ground matcha whisked with oat milk over ice.", price: 7, badge: "Dairy-free", category: "Matcha & brews", favorite: true, src: "/images/meal.webp" },
+    { name: "Everyday nourish bowl", desc: "Quinoa, roasted sweet potato, avocado, greens & lemon tahini.", price: 14.5, badge: "Plant-based", category: "Bowls", favorite: true, src: "/images/ccc.webp" },
+    { name: "Green goddess salad", desc: "Crunchy greens, cucumber, edamame & our herby green dressing.", price: 13, badge: "Fresh favorite", category: "Salads", favorite: true, src: "/images/dish3.webp" },
+    { name: "The avocado toast", desc: "Sourdough, smashed avocado, cherry tomatoes & chili crunch.", price: 10.5, badge: "All-day classic", category: "Toast", favorite: true, src: "/images/dish2.webp" },
+    { name: "Berry bright smoothie", desc: "Strawberry, blueberry, banana & creamy oat milk. Pure sunshine.", price: 8, badge: "Dairy-free", category: "Smoothies", favorite: true, src: "/images/shakes.webp" },
+    { name: "Oat milk flat white", desc: "Double ristretto, silky steamed oat milk & a smooth finish.", price: 5.5, badge: "Barista pick", category: "Espresso", favorite: true, src: "/images/shakes2.webp" },
+    { name: "Ceremonial iced matcha", desc: "Stone-ground matcha whisked with oat milk over ice.", price: 7, badge: "Dairy-free", category: "Matcha & brews", favorite: false, src: "/images/machine.webp" },
   ],
 };
 
@@ -46,7 +46,7 @@ export default function MenuSection() {
           </div>
 
           <a
-            href="#menu"
+            href="/menu"
             className="inline-flex items-center justify-between gap-8 self-start rounded-2xl border border-[#1f3d1f] px-7 py-4 text-base font-medium transition-colors duration-300 hover:bg-[#1f3d1f] hover:text-[#f7f4ed] md:self-auto"
           >
             {content.cta}
